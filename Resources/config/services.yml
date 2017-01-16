@@ -1,0 +1,5 @@
+services:
+    wiz_wang_editor.form.type:
+        class: Wiz\WangEditorBundle\Form\Type\WangEditorType
+        tags:
+            - { name: "form.type" }
