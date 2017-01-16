@@ -41,8 +41,5 @@ class WizWangEditorExtension extends ConfigurableExtension
                 ->clearTag('form.type')
                 ->addTag('form.type', ['alias' => 'wang_editor']);
         }
-
-        dump($config);
-        exit();
     }
 }
