@@ -1,0 +1,14 @@
+{
+    "name": "wiz/wang-editor-bundle",
+    "description": "开源Web富文本编辑器wangEditor的Symfony封装",
+    "type": "symfony-bundle",
+    "keywords": [ "wangeditor", "editor" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jack",
+            "email": "linjue@wilead.com"
+        }
+    ],
+    "require": {}
+}
