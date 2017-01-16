@@ -1,5 +1,18 @@
 services:
+    # Renderer
+    wiz_wang_editor.renderer:
+        class: Wiz\WangEditorBundle\Renderer\WangEditorRenderer
+        arguments: [ '@service_container' ]
+
+    # Form
     wiz_wang_editor.form.type:
         class: Wiz\WangEditorBundle\Form\Type\WangEditorType
         tags:
-            - { name: "form.type" }
+            - { name: form.type }
+
+    # Twig
+    wiz_wang_editor.twig_extension:
+        class: Wiz\WangEditorBundle\Twig\WangEditorExtension
+        arguments: [ '@wiz_wang_editor.renderer' ]
+        tags:
+            - { name: twig.extension }

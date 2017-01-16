@@ -16,6 +16,7 @@ namespace Wiz\WangEditorBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Wiz\WangEditorBundle\DependencyInjection\Compiler\ResourceCompilerPass;
 
 /**
  * Class WizWangEditorBundle
@@ -28,5 +29,7 @@ class WizWangEditorBundle extends Bundle
      */
     public function build(ContainerBuilder $container)
     {
+        $container
+            ->addCompilerPass(new ResourceCompilerPass());
     }
 }
