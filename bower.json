@@ -1,0 +1,19 @@
+{
+  "name": "WangEditorBundle",
+  "homepage": "https://github.com/lamjack/WangEditorBundle",
+  "authors": [
+    "jack <linjue@wilead.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Resources/public",
+    "test",
+    "tests"
+  ]
+}
