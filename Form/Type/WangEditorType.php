@@ -12,6 +12,7 @@
  * @link      https://github.com/lamjack
  * @version
  */
+
 namespace Wiz\WangEditorBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;

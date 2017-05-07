@@ -1,3 +1,14 @@
+{% use "form_div_layout.html.twig" %}
+
 {% block wang_editor_widget %}
-    <textarea {{ block('widget_attributes') }}><p>请输入内容...</p></textarea>
+    {% set attr = attr|merge({style: "height: 300px;"}) %}
+    {% spaceless %}
+        {{ block('textarea_widget') }}
+        <script type="text/javascript">
+            $(function () {
+                var editor = new wangEditor("{{ id }}");
+                editor.create();
+            });
+        </script>
+    {% endspaceless %}
 {% endblock %}
